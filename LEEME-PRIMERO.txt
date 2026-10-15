@@ -1,0 +1,25 @@
+LEGA - COMO USARLA EN RED (PC + CELULARES)
+
+1) Instalá Node.js (gratis) desde https://nodejs.org  (versión LTS). Una sola vez.
+2) Hacé doble clic en  INICIAR-LEGA.bat  (Mac/Linux: iniciar-lega.command).
+   Si Windows pregunta por el firewall, tocá "Permitir acceso".
+3) Se abre una ventana negra que muestra las direcciones, por ejemplo:
+       http://192.168.1.20:8080
+   Esa es la IP + puerto de ESTA computadora.
+4) Desde cualquier PC o celular conectado al mismo WiFi, abrí esa dirección en el navegador.
+   Ingresás con admin / admin (cambiá la clave en Usuarios). Cada persona que se cree una cuenta
+   (y que vos apruebes) ve SOLO sus propios legajos. Vos, como administrador, ves todo.
+5) La página para compartir con QR está en:  http://TU-IP:8080/descargar.html
+
+Importante
+- La computadora tiene que estar prendida y con la ventana abierta para que los demás entren.
+- Los datos y archivos se guardan en la carpeta "datos". Copiá esa carpeta para hacer un respaldo.
+- Esto está pensado para una red local (oficina o casa). Para usarlo desde Internet hay que
+  subirlo a un hosting que ejecute Node.js.
+- APK de Android: ver README.md. Al abrir la app del celular, en la pantalla de ingreso tocá
+  "Conectar a un servidor" y escribí la dirección de arriba.
+
+SI ALGO NO ANDA
+- "Error: Ningún archivo encontrado" al bajar LEGA.apk: el APK todavía no está en la carpeta (ver README.md, "APK automático").
+- Si el celular no abre la dirección: usá la IP que empieza con 192.168. (la del WiFi). Las 172.x suelen ser redes virtuales.
+- Sin APK, ya mismo: abrí la dirección en Chrome del celular y elegí "Agregar a pantalla de inicio".

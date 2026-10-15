@@ -1,0 +1,27 @@
+COMO OBTENER EL APK DE ANDROID (sin instalar nada en tu PC)
+Se arma solo en los servidores gratuitos de GitHub. Tarda unos 10 minutos.
+
+1) Entrá a https://github.com y creá una cuenta gratis (o iniciá sesión).
+2) Arriba a la derecha tocá "+" y "New repository".
+   Nombre: lega   |   marcá "Public"   |   tocá "Create repository".
+3) En la página que aparece tocá el link "uploading an existing file".
+4) Descomprimí LEGA-proyecto-VSCode.zip. Entrá a la carpeta LEGA, seleccioná TODO
+   (Ctrl + A) y arrastralo a la página de GitHub. Esperá a que termine de subir.
+5) Abajo tocá "Commit changes".
+6) Tocá la pestaña "Actions". Si pregunta algo, tocá "I understand my workflows, go ahead and enable them".
+7) A la izquierda elegí "Build APK" > "Run workflow" > botón verde "Run workflow".
+   Esperá hasta que aparezca un tilde verde (5 a 10 minutos).
+8) Volvé a la página principal del repositorio. A la derecha tocá "Releases" >
+   "LEGA APK (última versión)" > bajá el archivo LEGA.apk.
+9) Pasá LEGA.apk al celular (WhatsApp, Drive o cable) y abrilo.
+   Android va a pedir permiso para "instalar apps desconocidas": aceptalo.
+10) Al abrir la app, en la pantalla de ingreso tocá "Conectar a un servidor" y escribí la
+    dirección que muestra INICIAR-LEGA (la que empieza con 192.168.).
+
+Para que otras personas bajen el APK desde la página para compartir: guardá LEGA.apk en la
+carpeta del servidor (junto a servidor.js) y listo, el botón "Descargar APK" se activa solo.
+
+Si no aparece "Build APK" en Actions: la carpeta oculta ".github" no se subió. En el repositorio
+tocá Add file > Create new file, escribí el nombre  .github/workflows/build-apk.yml  y pegá el
+contenido del archivo build-apk.yml que viene en el zip (dentro de .github/workflows).
+Si el paso 7 termina en rojo: abrilo, copiá el texto del error y mandámelo.

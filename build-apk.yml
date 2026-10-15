@@ -1,0 +1,50 @@
+name: Build APK
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Instalar dependencias
+        run: npm install
+      - name: Preparar la web
+        run: |
+          mkdir -p www/lib
+          cp -r index.html css js icons manifest.webmanifest www/
+          curl -fsSL https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js -o www/lib/xlsx.full.min.js || echo "No se pudo bajar la libreria de Excel"
+      - name: Crear proyecto Android
+        run: |
+          npx cap add android
+          npx cap sync android
+      - name: Icono de la app
+        continue-on-error: true
+        run: npx --yes @capacitor/assets generate --android --iconBackgroundColor '#0b1533' --iconBackgroundColorDark '#0b1533'
+      - name: Compilar APK
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug
+      - name: Renombrar APK
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk LEGA.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LEGA-apk
+          path: LEGA.apk
+      - name: Publicar en Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: apk-latest
+          name: LEGA APK (última versión)
+          files: LEGA.apk

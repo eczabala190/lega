@@ -1,0 +1,6 @@
+{
+  "appId": "com.lega.app",
+  "appName": "LEGA",
+  "webDir": "www",
+  "server": { "androidScheme": "http", "cleartext": true }
+}

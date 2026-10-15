@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1533"><meta name="color-scheme" content="light dark">
+<title>Descargar LEGA · Gestión de legajos</title>
+<meta name="description" content="Descargá LEGA para Android, instalala en iPhone o abrila desde tu PC.">
+<meta property="og:title" content="Descargá LEGA"><meta property="og:description" content="Legajos, cobros y documentación. Android, iPhone y PC.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f4f8;--card:#fff;--ink:#0d1220;--mut:#6a7285;--line:#e6e8ef;--acc:#2f5bea;--ok:#117a45;--okb:#dff5e8;--sh:0 1px 2px rgba(16,24,40,.05),0 10px 28px rgba(16,24,40,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#090c13;--card:#141925;--ink:#eef1f8;--mut:#98a1b6;--line:#232a3a;--acc:#7b9bff;--okb:#10301f;--ok:#6fd49a;--sh:0 10px 28px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#090c13;--card:#141925;--ink:#eef1f8;--mut:#98a1b6;--line:#232a3a;--acc:#7b9bff;--okb:#10301f;--ok:#6fd49a;--sh:0 10px 28px rgba(0,0,0,.4)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.hero{background:radial-gradient(120% 100% at 0% 0%,#3a63f0 0%,#1b2a6b 48%,#0b1533 100%);color:#fff;padding:30px 22px 96px;border-radius:0 0 40px 40px}
+.in{max-width:1040px;margin:0 auto}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:3px}.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#3d8bff,#6a45f2);display:grid;place-items:center}
+.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.08;letter-spacing:-1.2px;margin:26px 0 10px;font-weight:800}.hero p{margin:0;color:#c3cdf0;font-size:17px;max-width:520px}
+.chip{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.14);padding:7px 14px;border-radius:99px;font-size:14px;font-weight:600;margin-top:20px}.chip i{width:8px;height:8px;border-radius:50%;background:#4ade80}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:15px;font:inherit;font-weight:700;border:0;cursor:pointer;text-decoration:none;transition:transform .12s}.btn:active{transform:scale(.97)}
+.pri{background:linear-gradient(135deg,#2f5bea,#6a45f2);color:#fff;box-shadow:0 10px 24px rgba(79,70,229,.38)}.ghost{background:rgba(255,255,255,.14);color:#fff}.line{background:transparent;color:var(--ink);border:1.5px solid var(--line)}.wa{background:#25d366;color:#06361a}
+.wrap{max-width:1040px;margin:-62px auto 0;padding:0 16px 40px}.grid{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}.grid>*{min-width:0}[hidden]{display:none!important}
+@media(min-width:900px){.grid{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:start}.share{position:sticky;top:20px}}
+.col{display:flex;flex-direction:column;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:var(--sh)}
+[data-dev=android] #c-android{order:-1}[data-dev=ios] #c-ios{order:-1}[data-dev=pc] #c-pc{order:-1}
+.head{display:flex;align-items:center;gap:14px;margin-bottom:6px}.ico{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;color:#fff;flex:none}.a{background:linear-gradient(135deg,#10b981,#0ea5a4)}.i{background:linear-gradient(135deg,#475569,#1e293b)}.p{background:linear-gradient(135deg,#3b82f6,#6366f1)}
+h2{font-size:21px;margin:0;letter-spacing:-.4px}.mut{color:var(--mut);font-size:14px}.tag{margin-left:auto;font-size:12px;font-weight:700;color:var(--ok);background:var(--okb);padding:4px 11px;border-radius:99px}
+ol{list-style:none;counter-reset:s;padding:0;margin:14px 0 4px}ol li{counter-increment:s;position:relative;padding-left:40px;margin:12px 0;min-height:26px}ol li::before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:9px;background:color-mix(in srgb,var(--acc) 15%,transparent);color:var(--acc);font-weight:800;font-size:13px;display:grid;place-items:center}
+.kv{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-top:1px solid var(--line);font-size:14px}.kv span{color:var(--mut)}.kv b{text-align:right;word-break:break-all}
+.box{display:flex;gap:8px;align-items:center;background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:6px 6px 6px 14px;margin:12px 0}.box code{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 14px/1.4 ui-monospace,Menlo,Consolas,monospace}.box .btn{padding:9px 14px;font-size:14px;border-radius:11px}
+.qr{width:min(230px,70%);margin:6px auto 14px;background:#fff;border-radius:20px;padding:10px;box-shadow:var(--sh)}.qr svg{display:block;width:100%;height:auto}.share{text-align:center}.share .row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}.share .btn{flex:1;min-width:130px}
+details{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 20px}summary{font-weight:700;cursor:pointer}details p,details li{font-size:14px}code.i{background:var(--bg);padding:2px 6px;border-radius:6px;font:600 13px ui-monospace,Menlo,Consolas,monospace}
+.note{background:color-mix(in srgb,#f59e0b 16%,var(--card));border:1px solid color-mix(in srgb,#f59e0b 40%,var(--line));border-radius:14px;padding:12px 14px;font-size:14px;margin:12px 0}.btn[data-off]{background:var(--line)!important;color:var(--mut)!important;box-shadow:none!important}.foot{text-align:center;color:var(--mut);font-size:13px;margin:26px 0 10px}.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(24px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:14px;font-weight:600;font-size:14px;z-index:9}
+</style></head>
+<body>
+<header class="hero"><div class="in">
+ <div class="brand"><div class="mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>LEGA</div>
+ <h1>Descargá LEGA<br>y llevá tus legajos<br>a todos lados.</h1>
+ <p>Legajos, cobros por mes, documentación y gráficos. En tu celular Android, en iPhone o desde la computadora.</p>
+ <div class="chip"><i></i><span id="devtxt">Detectando tu dispositivo…</span></div>
+ <div class="cta" id="cta"></div>
+</div></header>
+
+<main class="wrap"><div class="grid">
+ <div class="col">
+  <section class="card" id="c-android"><div class="head"><div class="ico a"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg></div><div><h2>Android</h2><div class="mut">Instalá el archivo APK</div></div><span class="tag">APK</span></div>
+   <a class="btn pri apkbtn" id="apk" href="LEGA.apk" download style="width:100%;margin:12px 0 4px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Descargar APK</a>
+   <div class="note" id="apkinfo" hidden><b>El archivo LEGA.apk todavía no está cargado.</b><br>Mientras tanto podés usar LEGA desde el navegador del celular: abrí <b id="apkApp"></b> y elegí “Agregar a pantalla de inicio”.<br><span class="mut">Si sos el administrador: generá el APK (README → “APK automático”) y guardalo como <b>LEGA.apk</b> junto a servidor.js.</span></div>
+   <ol><li>Tocá <b>Descargar APK</b> y esperá que termine.</li><li>Abrí el archivo descargado (en la notificación o en <b>Descargas</b>).</li><li>Si Android lo pide, activá <b>“Permitir desde esta fuente”</b>.</li><li>Tocá <b>Instalar</b> y abrí LEGA.</li></ol>
+   <div class="mut">¿Preferís no instalar el archivo? Abrí este link en Chrome, tocá los tres puntos y elegí <b>Instalar app</b>.</div></section>
+  <section class="card" id="c-ios"><div class="head"><div class="ico i"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><div><h2>iPhone</h2><div class="mut">Se instala desde Safari</div></div><span class="tag">Sin APK</span></div>
+   <ol><li>Abrí el link de LEGA en <b>Safari</b>.</li><li>Tocá el botón <b>Compartir</b> (el cuadrado con la flecha).</li><li>Elegí <b>Agregar a pantalla de inicio</b>.</li><li>Tocá <b>Agregar</b>. LEGA queda como una app más.</li></ol>
+   <a class="btn line" id="openIos" href="index.html" style="width:100%;margin-top:6px">Abrir LEGA</a></section>
+  <section class="card" id="c-pc"><div class="head"><div class="ico p"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div><h2>Computadora</h2><div class="mut">Windows, Mac o Linux</div></div><span class="tag">Web</span></div>
+   <div class="box"><code id="urlApp"></code><button class="btn pri" data-copy="urlApp">Copiar</button></div>
+   <div class="kv"><span>IP o dominio</span><b id="host"></b></div><div class="kv"><span>Puerto</span><b id="port"></b></div><div class="kv" id="lanRow" hidden><span>Dentro de tu red WiFi</span><b id="lan"></b></div>
+   <a class="btn pri" id="openPc" href="index.html" target="_blank" rel="noopener" style="width:100%;margin-top:14px">Abrir LEGA en el navegador</a>
+   <div class="mut" style="margin-top:12px">Funciona en Chrome, Edge o Firefox. Desde la barra de direcciones también podés instalarla como programa.</div></section>
+ </div>
+ <aside class="card share"><h2>Compartir LEGA</h2><div class="mut" style="margin:4px 0 12px">Escaneá el código con la cámara del celular</div>
+  <div class="qr" id="qr"></div>
+  <div class="box"><code id="urlPage"></code><button class="btn pri" data-copy="urlPage">Copiar</button></div>
+  <div class="row"><a class="btn wa" id="wa" target="_blank" rel="noopener">WhatsApp</a><button class="btn line" id="nat">Compartir</button><a class="btn line" id="mail">Email</a></div></aside>
+</div>
+<details><summary>Para el administrador: cómo publicar esta página</summary>
+ <ol><li>Generá el APK (ver <code class="i">README.md</code>, sección “APK automático”) y guardalo en esta carpeta con el nombre <code class="i">LEGA.apk</code>. O pegá su link en <code class="i">apkUrl</code> dentro de este archivo.</li><li>Subí toda la carpeta a <b>app.netlify.com/drop</b> (o Vercel / GitHub Pages).</li><li>El link que te dan es el que compartís. Esta página muestra sola la dirección, el QR y los botones.</li><li>Si usás una IP de tu red (ej. <code class="i">192.168.1.20:8080</code>), cargala en <code class="i">ip</code> y se mostrará para la PC.</li></ol></details>
+<div class="foot">LEGA · Gestión inteligente de legajos laborales</div></main>
+
+<script>
+const CFG={apkUrl:'LEGA.apk',appUrl:'index.html',ip:''};
+const $=s=>document.querySelector(s);
+function qrSvg(text){
+ const B=[...new TextEncoder().encode(text)];
+ const T=[0,[10,1,16,0,0],[16,1,28,0,0],[26,1,44,0,0],[18,2,32,0,0],[24,2,43,0,0],[16,4,27,0,0],[18,4,31,0,0],[22,2,38,2,39],[22,3,36,2,37],[26,4,43,1,44]];
+ let v=1;for(;v<=10;v++){const t=T[v];if(4+(v<10?8:16)+8*B.length<=8*(t[1]*t[2]+t[3]*t[4]))break}
+ if(v>10)return '';
+ const [ecl,b1,d1,b2,d2]=T[v],cap=b1*d1+b2*d2,bits=[],put=(x,n)=>{for(let i=n-1;i>=0;i--)bits.push((x>>>i)&1)};
+ put(4,4);put(B.length,v<10?8:16);B.forEach(b=>put(b,8));put(0,Math.min(4,cap*8-bits.length));while(bits.length%8)bits.push(0);
+ for(let p=0xEC;bits.length<cap*8;p^=0xFD)put(p,8);
+ const cw=[];for(let i=0;i<bits.length;i+=8)cw.push(bits.slice(i,i+8).reduce((a,b)=>a*2+b,0));
+ const ex=[],lg=[];let x=1;for(let i=0;i<255;i++){ex[i]=x;lg[x]=i;x<<=1;if(x&256)x^=285}for(let i=255;i<512;i++)ex[i]=ex[i-255];
+ const mul=(a,b)=>a&&b?ex[lg[a]+lg[b]]:0;let g=[1];for(let i=0;i<ecl;i++){const nn=Array(g.length+1).fill(0);g.forEach((c,j)=>{nn[j]^=c;nn[j+1]^=mul(c,ex[i])});g=nn}
+ const rs=d=>{const r=Array(ecl).fill(0);for(const b of d){const f=b^r.shift();r.push(0);if(f)for(let i=0;i<ecl;i++)r[i]^=mul(g[i+1],f)}return r};
+ const blocks=[];let p0=0;for(let i=0;i<b1+b2;i++){const len=i<b1?d1:d2;blocks.push(cw.slice(p0,p0+len));p0+=len}
+ const ecs=blocks.map(rs),out=[];for(let i=0;i<Math.max(d1,d2);i++)blocks.forEach(b=>{if(i<b.length)out.push(b[i])});for(let i=0;i<ecl;i++)ecs.forEach(e=>out.push(e[i]));
+ const fin=[];out.forEach(b=>{for(let i=7;i>=0;i--)fin.push((b>>i)&1)});for(let i=0;i<(v>=2&&v<=6?7:0);i++)fin.push(0);
+ const n=17+4*v,M=[],F=[];for(let i=0;i<n;i++){M.push(Array(n).fill(0));F.push(Array(n).fill(false))}
+ const st=(x,y,d)=>{M[y][x]=d?1:0;F[y][x]=true};
+ for(let i=0;i<n;i++){st(6,i,i%2==0);st(i,6,i%2==0)}
+ const finder=(cx,cy)=>{for(let dy=-4;dy<=4;dy++)for(let dx=-4;dx<=4;dx++){const d=Math.max(Math.abs(dx),Math.abs(dy)),X=cx+dx,Y=cy+dy;if(X>=0&&X<n&&Y>=0&&Y<n)st(X,Y,d!==2&&d!==4)}};
+ finder(3,3);finder(n-4,3);finder(3,n-4);
+ const AP=[0,0,[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50]][v];
+ if(AP){const L=AP.length-1;AP.forEach((cy,i)=>AP.forEach((cx,j)=>{if((i===0&&j===0)||(i===0&&j===L)||(i===L&&j===0))return;for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++)st(cx+dx,cy+dy,Math.max(Math.abs(dx),Math.abs(dy))!==1)}))}
+ const fmt=(A,m)=>{let r=m<<10;for(let i=14;i>=10;i--)if((r>>i)&1)r^=0x537<<(i-10);const b=((m<<10)|r)^0x5412,w=(X,Y,k)=>{A[Y][X]=(b>>k)&1;F[Y][X]=true};
+  for(let i=0;i<=5;i++)w(8,i,i);w(8,7,6);w(8,8,7);w(7,8,8);for(let i=9;i<15;i++)w(14-i,8,i);for(let i=0;i<8;i++)w(n-1-i,8,i);for(let i=8;i<15;i++)w(8,n-15+i,i);A[n-8][8]=1;F[n-8][8]=true};
+ fmt(M,0);
+ if(v>=7){let r=v;for(let i=0;i<12;i++)r=(r<<1)^((r>>>11)*0x1F25);const b=(v<<12)|r;for(let i=0;i<18;i++){const c=(b>>i)&1,a=n-11+i%3,q=Math.floor(i/3);st(a,q,c);st(q,a,c)}}
+ let k=0;for(let rt=n-1;rt>=1;rt-=2){if(rt===6)rt=5;for(let vt=0;vt<n;vt++)for(let j=0;j<2;j++){const X=rt-j,up=((rt+1)&2)===0,Y=up?n-1-vt:vt;if(!F[Y][X]&&k<fin.length)M[Y][X]=fin[k++]}}
+ const cond=[(x,y)=>(x+y)%2==0,(x,y)=>y%2==0,(x,y)=>x%3==0,(x,y)=>(x+y)%3==0,(x,y)=>(Math.floor(x/3)+Math.floor(y/2))%2==0,(x,y)=>x*y%2+x*y%3==0,(x,y)=>(x*y%2+x*y%3)%2==0,(x,y)=>((x+y)%2+x*y%3)%2==0];
+ const pen=A=>{let p=0;const ls=[];for(let y=0;y<n;y++)ls.push(A[y].join(''));for(let X=0;X<n;X++)ls.push(A.map(r=>r[X]).join(''));
+  ls.forEach(s=>{const m=s.match(/0{5,}|1{5,}/g);if(m)m.forEach(r=>p+=r.length-2);['10111010000','00001011101'].forEach(pt=>{for(let i=s.indexOf(pt);i>=0;i=s.indexOf(pt,i+1))p+=40})});
+  for(let y=0;y<n-1;y++)for(let X=0;X<n-1;X++){const c=A[y][X];if(c===A[y][X+1]&&c===A[y+1][X]&&c===A[y+1][X+1])p+=3}
+  const dk=A.flat().reduce((a,b)=>a+b,0),t=n*n;return p+(Math.ceil(Math.abs(dk*20-t*10)/t)-1)*10};
+ let best=null,bp=1e9;for(let m=0;m<8;m++){const A=M.map(r=>r.slice());for(let y=0;y<n;y++)for(let X=0;X<n;X++)if(!F[y][X]&&cond[m](X,y))A[y][X]^=1;fmt(A,m);const p=pen(A);if(p<bp){bp=p;best=A}}
+ const q=4,s=n+q*2;let d='';for(let y=0;y<n;y++)for(let X=0;X<n;X++)if(best[y][X])d+=`M${X+q} ${y+q}h1v1h-1z`;
+ return `<svg viewBox="0 0 ${s} ${s}" role="img" aria-label="Código QR para abrir esta página" shape-rendering="crispEdges"><rect width="${s}" height="${s}" fill="#fff"/><path d="${d}" fill="#0b1533"/></svg>`}
+
+const ua=navigator.userAgent,dev=/android/i.test(ua)?'android':(/iphone|ipad|ipod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))?'ios':'pc';
+document.body.dataset.dev=dev;
+const abs=(u,b)=>{try{return new URL(u,b).href}catch(e){return u}};
+const names={android:'Android',ios:'iPhone',pc:'Computadora'};$('#devtxt').textContent='Detectamos: '+names[dev];
+function paint(base){const here=location.href.split('#')[0].split('?')[0],page=base?base+location.pathname:here,isWeb=/^https?:/.test(page),appUrl=abs(CFG.appUrl,page),apkUrl=abs(CFG.apkUrl,page);
+ $('#apk').href=apkUrl;$('#openIos').href=appUrl;$('#openPc').href=appUrl;$('#urlApp').textContent=appUrl;$('#urlPage').textContent=isWeb?page:'(publicá la página para obtener el link)';
+ try{const u=new URL(appUrl);$('#host').textContent=u.hostname||'-';$('#port').textContent=u.port||(u.protocol==='https:'?'443 (HTTPS)':'80 (HTTP)')}catch(e){$('#host').textContent='-';$('#port').textContent='-'}
+ if(CFG.ip){$('#lanRow').hidden=false;$('#lan').textContent=/^https?:/.test(CFG.ip)?CFG.ip:'http://'+CFG.ip}
+ $('#qr').innerHTML=isWeb?qrSvg(page):'<div class="mut" style="padding:40px 8px">El código QR aparece cuando la página está publicada.</div>';
+ const msg='Descargá LEGA: '+(isWeb?page:'');$('#wa').href='https://wa.me/?text='+encodeURIComponent(msg);$('#mail').href='mailto:?subject='+encodeURIComponent('Descargá LEGA')+'&body='+encodeURIComponent(msg);
+ $('#nat').onclick=()=>{if(navigator.share)navigator.share({title:'LEGA',text:'Descargá LEGA',url:isWeb?page:undefined}).catch(()=>{});else copy(page)};
+ $('#apkApp').textContent=appUrl;$('#cta').innerHTML=dev==='android'?`<a class="btn pri apkbtn" href="${apkUrl}" download>Descargar APK</a><a class="btn ghost" href="#c-pc">Ver en computadora</a>`:dev==='ios'?`<a class="btn pri" href="#c-ios">Cómo instalar en iPhone</a><a class="btn ghost" href="${appUrl}">Abrir LEGA</a>`:`<a class="btn pri" href="${appUrl}" target="_blank" rel="noopener">Abrir LEGA</a><a class="btn ghost" href="#c-android">Descargar para Android</a>`;checkApk(abs(CFG.apkUrl,here),apkUrl)}
+let apkState=null,apkFor='';
+function applyApk(){document.querySelectorAll('.apkbtn').forEach(a=>{if(apkState===false){if(!a.dataset.t)a.dataset.t=a.innerHTML;a.setAttribute('data-off','1');a.removeAttribute('download');a.setAttribute('href','#apkinfo');a.textContent='APK todavía no disponible'}else if(a.dataset.t){a.removeAttribute('data-off');a.setAttribute('download','');a.innerHTML=a.dataset.t;a.href=apkFor}});$('#apkinfo').hidden=apkState!==false}
+function checkApk(t,u){apkFor=u;if(location.protocol==='file:'){apkState=null;applyApk();return}fetch(t,{method:'HEAD',cache:'no-store'}).then(r=>{apkState=r.ok}).catch(()=>{apkState=false}).then(applyApk)}
+paint('');
+function toast(t){const e=document.createElement('div');e.className='toast';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),1800)}
+function copy(t){const ok=()=>toast('Copiado');if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(t).then(ok,fb);else fb();function fb(){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){toast('Copialo manualmente')}a.remove()}}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-copy]');if(b)copy($('#'+b.dataset.copy).textContent)});
+fetch('/api/info').then(r=>r.ok?r.json():null).then(i=>{if(!i||!i.ips||!i.ips.length)return;const lan='http://'+i.ips[0]+(i.port&&i.port!==80?':'+i.port:'');paint(lan);if(i.ips.length>1){$('#lanRow').hidden=false;$('#lan').textContent=i.ips.map(a=>a+':'+i.port).join(' · ')}}).catch(()=>{});
+</script></body></html>
